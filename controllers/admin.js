@@ -65,7 +65,7 @@ exports.calculate = (req, res) => {
     console.log(jsonString);
 
 
-    fs.appendFile('/home/mutant/edu/data.json', jsonString, err => {
+    fs.appendFile('../data.json', jsonString, err => {
         if (err) {
             console.log('Error writing file', err)
         } else {
@@ -77,7 +77,7 @@ exports.calculate = (req, res) => {
 };
 
 exports.history = (req, res) => {
-    fs.readFile('/home/mutant/edu/data.json', 'utf8', (err, jsonString) => {
+    fs.readFile('../data.json', 'utf8', (err, jsonString) => {
         if (err) {
             console.log("File read failed:", err)
             return

@@ -4,7 +4,7 @@
 `npm install`
 
 ### To start the app
-`npm start` or `node server,js`
+`npm start` or `node server.js`
 
 This api has two two routes:
 - api/calculate : This is post method. Height and restitution is passed as a raw json data. Use postman for accessing the api.
